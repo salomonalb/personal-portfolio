@@ -1,9 +1,11 @@
+import Hero from "./components/Hero"
+import { userData } from "./data"
 
 function App() {
 
   return (
     <div className="App">
-      hola
+      <Hero name={userData.name} photo={userData.profilePicture} />
     </div>
   )
 }
