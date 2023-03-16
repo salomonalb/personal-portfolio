@@ -1,0 +1,10 @@
+@use "./variables" as *;
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__image {
+    width: 6rem;
+  }
+}

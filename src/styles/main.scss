@@ -1,5 +1,7 @@
 @use "./reset" as *;
 @use "./variables" as *;
+@use "./section" as *;
+@use "./hero" as *;
 
 body {
   background-color: $grayish-blue;

@@ -1,0 +1,15 @@
+@use "./variables" as *;
+
+.section {
+  background-color: $dark-blue;
+  padding-block: 3rem;
+  padding-inline: 2rem;
+  border-radius: 4rem;
+
+  &__title {
+    font-family: $font-title;
+    color: $font-color;
+    font-size: 6.4rem;
+    font-weight: normal;
+  }
+}

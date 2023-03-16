@@ -5,9 +5,9 @@ type HeroProps = {
 
 function Hero({ name, photo }: HeroProps) {
   return (
-    <section>
-      <img src={photo} alt={name} />
-      <h1>{name}</h1>
+    <section className="section hero">
+      <img className="hero__image" src={photo} alt={name} />
+      <h1 className="section__title hero__title">{name}</h1>
     </section>
   );
 }
