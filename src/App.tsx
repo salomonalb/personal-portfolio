@@ -1,4 +1,5 @@
 import About from "./components/About"
+import Contact from "./components/Contact"
 import Hero from "./components/Hero"
 import Projects from "./components/projects"
 import Skills from "./components/Skills"
@@ -7,12 +8,13 @@ import { userData } from "./data"
 function App() {
 
   return (
-    <div className="App">
+    <main className="App">
       <Hero name={userData.name} photo={userData.profilePicture} />
       <About text={userData.description} />
       <Skills skills={userData.skills} />
       <Projects projects={userData.projects} />
-    </div>
+      <Contact contacts={userData.contactMethods} />
+    </main>
   )
 }
 
