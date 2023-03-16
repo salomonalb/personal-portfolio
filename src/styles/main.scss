@@ -3,7 +3,7 @@
 @use "./section" as *;
 @use "./hero" as *;
 @use "./about" as *;
-
+@use "./skills" as *;
 body {
   background-color: $grayish-blue;
   padding: 2rem;

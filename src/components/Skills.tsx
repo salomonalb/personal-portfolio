@@ -7,17 +7,17 @@ type skillsProps = {
 function Skills({ skills }: skillsProps) {
   const skillsItems = skills.map((skill) => {
     return (
-      <li>
+      <li className="skill">
         {skill.certificate ? (
-          <p>
-            <a href={skill.certificate} target="_blank">
-              <img src={skill.icon} alt={skill.name} />
-              {skill.name} <img src={linkIcon} alt="" />
+          <p className="section__text">
+            <a className="skill__link skill__row" href={skill.certificate} target="_blank">
+              <img className="skill__icon" src={skill.icon} alt={skill.name} />
+              {skill.name} <img className="section__link-icon" src={linkIcon} alt="" />
             </a>
           </p>
         ) : (
-          <p>
-            <img src={skill.icon} alt={skill.name} />
+          <p className="section__text skill__row">
+            <img className="skill__icon" src={skill.icon} alt={skill.name} />
             {skill.name}
           </p>
         )}
@@ -26,9 +26,9 @@ function Skills({ skills }: skillsProps) {
   });
 
   return (
-    <section>
-      <h2>My Skills :</h2>
-      <ul>{skillsItems}</ul>
+    <section className="section skills">
+      <h2 className="section__title">My Skills :</h2>
+      <ul className="skills__container">{skillsItems}</ul>
     </section>
   );
 }
