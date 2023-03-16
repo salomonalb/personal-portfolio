@@ -1,0 +1,23 @@
+@use "./variables" as *;
+
+.desk-nav {
+  display: none;
+}
+
+.header {
+  background-color: $dark-blue;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__button {
+    width: 4rem;
+    background-color: transparent;
+    border: none;
+  }
+}

@@ -5,7 +5,8 @@
 @use "./about" as *;
 @use "./project" as *;
 @use "./footer" as *;
-@use "./nav" as *;
+@use "./header" as *;
+@use "./drawer" as *;
 
 body {
   background-color: $grayish-blue;

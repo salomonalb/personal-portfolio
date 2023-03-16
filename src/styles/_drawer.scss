@@ -1,0 +1,34 @@
+@use "./variables" as *;
+
+.drawer {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  right: -100%;
+  width: 80%;
+  transition: right 0.3s ease-in-out;
+  background-color: $dark-blue;
+  padding: 2rem;
+  padding-block: 3rem;
+  display: flex;
+  flex-direction: column;
+
+  &.--open {
+    right: 0;
+  }
+  &__button {
+    width: 4rem;
+    margin-left: auto;
+    border: none;
+    background-color: transparent;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
+
+}
+
