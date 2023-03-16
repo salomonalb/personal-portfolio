@@ -10,9 +10,18 @@ function Skills({ skills }: skillsProps) {
       <li className="section__item">
         {skill.certificate ? (
           <p className="section__text">
-            <a className="section__link section__row" href={skill.certificate} target="_blank">
-              <img className="section__icon" src={skill.icon} alt={skill.name} />
-              {skill.name} <img className="section__link-icon" src={linkIcon} alt="" />
+            <a
+              className="section__link section__row"
+              href={skill.certificate}
+              target="_blank"
+            >
+              <img
+                className="section__icon"
+                src={skill.icon}
+                alt={skill.name}
+              />
+              {skill.name}{" "}
+              <img className="section__link-icon" src={linkIcon} alt="" />
             </a>
           </p>
         ) : (

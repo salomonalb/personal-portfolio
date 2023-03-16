@@ -9,14 +9,14 @@ import { userData } from "./data";
 function App() {
   return (
     <>
-    <main className="App">
-      <Hero name={userData.name} photo={userData.profilePicture} />
-      <About text={userData.description} />
-      <Skills skills={userData.skills} />
-      <Projects projects={userData.projects} />
-      <Contact contacts={userData.contactMethods} />
-    </main>
-    <Footer fullname={userData.name} />
+      <main className="App">
+        <Hero name={userData.name} photo={userData.profilePicture} />
+        <About text={userData.description} />
+        <Skills skills={userData.skills} />
+        <Projects projects={userData.projects} />
+        <Contact contacts={userData.contactMethods} />
+      </main>
+      <Footer fullname={userData.name} />
     </>
   );
 }

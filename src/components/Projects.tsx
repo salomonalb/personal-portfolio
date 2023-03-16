@@ -10,13 +10,27 @@ function Projects({ projects }: projectsProps) {
     return (
       <article className="project">
         <h3 className="project__title">{project.name}</h3>
-        <img className="project__image" src={project.projectImage} alt={project.name} />
-        <p className="project__description section__text">{project.description}</p>
+        <img
+          className="project__image"
+          src={project.projectImage}
+          alt={project.name}
+        />
+        <p className="project__description section__text">
+          {project.description}
+        </p>
         <div className="project__menu">
-          <a className="project__button section__text" href={project.websiteLink} target="_blank">
+          <a
+            className="project__button section__text"
+            href={project.websiteLink}
+            target="_blank"
+          >
             Open <img className="section__link-icon" src={linkIcon} alt="" />
           </a>
-          <a className="project__button section__text" href={project.githubLink} target="_blank">
+          <a
+            className="project__button section__text"
+            href={project.githubLink}
+            target="_blank"
+          >
             Github <img className="section__link-icon" src={linkIcon} alt="" />
           </a>
         </div>

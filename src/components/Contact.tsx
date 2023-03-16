@@ -8,8 +8,13 @@ function Contact({ contacts }: contactProps) {
   const contactElements = contacts.map((contact) => {
     return (
       <li className="section__item">
-        <a className="section__row section__text" href={contact.link} target="_blank">
-          <img className="section__icon" src={contact.icon} alt="" /> {contact.text}{" "}
+        <a
+          className="section__row section__text"
+          href={contact.link}
+          target="_blank"
+        >
+          <img className="section__icon" src={contact.icon} alt="" />{" "}
+          {contact.text}{" "}
           <img className="section__link-icon" src={linkIcon} alt="" />
         </a>
       </li>
