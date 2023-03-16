@@ -4,6 +4,8 @@
 @use "./hero" as *;
 @use "./about" as *;
 @use "./skills" as *;
+@use "./project" as *;
+
 body {
   background-color: $grayish-blue;
   padding: 2rem;

@@ -1,0 +1,40 @@
+@use "./variables" as *;
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.project {
+  background-color: $grayish-blue;
+  padding: 2rem;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  &__title {
+    font-size: 3.2rem;
+    color: $font-color;
+    font-family: $font-title;
+    font-weight: normal;
+  }
+  &__image {
+    border-radius: 1.5rem;
+  }
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__button {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    text-decoration: none;
+    padding-inline: 2rem;
+    padding-block: 1.5rem;
+    background-color: $dark-blue;
+    border-radius: 3rem;
+  }
+}
