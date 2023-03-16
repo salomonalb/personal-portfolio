@@ -3,17 +3,16 @@
 @use "./section" as *;
 @use "./hero" as *;
 @use "./about" as *;
-@use "./skills" as *;
 @use "./project" as *;
-@use "./contacts" as *;
+@use "./footer" as *;
 
 body {
   background-color: $grayish-blue;
-  padding: 2rem;
 }
 
 main {
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  padding: 2rem;
 }

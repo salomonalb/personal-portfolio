@@ -1,0 +1,11 @@
+@use "./variables" as *;
+
+.footer {
+  width: 100%;
+  background-color: $dark-blue;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 6.5rem;
+}
