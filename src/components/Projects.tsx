@@ -39,7 +39,7 @@ function Projects({ projects }: projectsProps) {
   });
 
   return (
-    <section className="section">
+    <section id="projects" className="section">
       <h2 className="section__title">My Projects :</h2>
       <div className="projects-container">{projectElements}</div>
     </section>

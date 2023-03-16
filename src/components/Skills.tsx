@@ -35,7 +35,7 @@ function Skills({ skills }: skillsProps) {
   });
 
   return (
-    <section className="section">
+    <section id="skills" className="section">
       <h2 className="section__title">My Skills :</h2>
       <ul className="section__container">{skillsItems}</ul>
     </section>

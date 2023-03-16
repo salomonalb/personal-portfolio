@@ -22,7 +22,7 @@ function Contact({ contacts }: contactProps) {
   });
 
   return (
-    <section className="section">
+    <section id="contact" className="section">
       <h2 className="section__title">Contact Me :</h2>
       <ul className="section__container">{contactElements}</ul>
     </section>

@@ -5,6 +5,7 @@
 @use "./about" as *;
 @use "./project" as *;
 @use "./footer" as *;
+@use "./nav" as *;
 
 body {
   background-color: $grayish-blue;
@@ -15,4 +16,5 @@ main {
   flex-direction: column;
   gap: 3rem;
   padding: 2rem;
+  scroll-padding-top: 3rem;
 }

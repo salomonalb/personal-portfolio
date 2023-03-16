@@ -2,6 +2,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
+import MobileNav from "./components/MobileNav";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import { userData } from "./data";
@@ -9,6 +10,9 @@ import { userData } from "./data";
 function App() {
   return (
     <>
+      <header>
+        <MobileNav />
+      </header>
       <main className="App">
         <Hero name={userData.name} photo={userData.profilePicture} />
         <About text={userData.description} />

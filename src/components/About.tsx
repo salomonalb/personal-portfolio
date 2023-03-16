@@ -8,7 +8,7 @@ function About({ text }: AboutProps) {
   });
 
   return (
-    <section className="section about">
+    <section id="about" className="section about">
       <h2 className="section__title">About Me :</h2>
       {paragraphs}
     </section>
