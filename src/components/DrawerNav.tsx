@@ -1,11 +1,11 @@
-import closeIcon from "../images/icons/close-icon.jpg"
+import closeIcon from "../images/icons/close-icon.jpg";
 
 type drawerNavProps = {
-  isOpen: boolean,
-  handleClose: () => void
-}
+  isOpen: boolean;
+  handleClose: () => void;
+};
 
-function DrawerNav({isOpen, handleClose} : drawerNavProps) {
+function DrawerNav({ isOpen, handleClose }: drawerNavProps) {
   return (
     <nav className={`drawer ${isOpen ? "--open" : ""}`}>
       <button className="drawer__button" onClick={handleClose}>
@@ -13,20 +13,28 @@ function DrawerNav({isOpen, handleClose} : drawerNavProps) {
       </button>
       <ul className="drawer__list">
         <li>
-          <a className="section__text" href="#about" onClick={handleClose}>About Me</a>
+          <a className="section__text" href="#about" onClick={handleClose}>
+            About Me
+          </a>
         </li>
         <li>
-          <a className="section__text" href="#skills" onClick={handleClose}>My Skills</a>
+          <a className="section__text" href="#skills" onClick={handleClose}>
+            My Skills
+          </a>
         </li>
         <li>
-          <a className="section__text" href="#projects" onClick={handleClose}>My Projects</a>
+          <a className="section__text" href="#projects" onClick={handleClose}>
+            My Projects
+          </a>
         </li>
         <li>
-          <a className="section__text" href="#contact" onClick={handleClose}>Contact Me</a>
+          <a className="section__text" href="#contact" onClick={handleClose}>
+            Contact Me
+          </a>
         </li>
       </ul>
     </nav>
-  )
+  );
 }
 
-export default DrawerNav
+export default DrawerNav;

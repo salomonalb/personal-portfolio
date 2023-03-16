@@ -1,25 +1,22 @@
-import DrawerNav from "./DrawerNav"
-import menuIcon from "../images/icons/menu-icon.png"
-import { useState } from "react"
+import DrawerNav from "./DrawerNav";
+import menuIcon from "../images/icons/menu-icon.png";
+import { useState } from "react";
 
 type headerProps = {
   fullname: string;
 };
 
-function Header({fullname}: headerProps) {
-
-  const [isOpen, setIsOpen] = useState(false)
+function Header({ fullname }: headerProps) {
+  const [isOpen, setIsOpen] = useState(false);
 
   const initials = fullname
     .split(" ")
     .map((word) => word[0])
     .join("");
-  
+
   function toggleNav() {
-    setIsOpen(prevIsOpen => !prevIsOpen)
+    setIsOpen((prevIsOpen) => !prevIsOpen);
   }
-
-
 
   return (
     <header className="header">
@@ -34,9 +31,9 @@ function Header({fullname}: headerProps) {
       <button className="header__button" onClick={toggleNav}>
         <img className="header__icon" src={menuIcon} alt="open navigation" />
       </button>
-      <DrawerNav  isOpen={isOpen} handleClose={toggleNav} />
+      <DrawerNav isOpen={isOpen} handleClose={toggleNav} />
     </header>
-  )
+  );
 }
 
-export default Header
+export default Header;
