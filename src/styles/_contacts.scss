@@ -1,5 +1,13 @@
 @use "./variables" as *;
 
+//This and skills are exactly the same, stay DRY
+// maybe move it inside section: section-container, section-row, etc
+
+.contacts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 .contact {
   list-style-type: none;
 
