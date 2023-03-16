@@ -53,7 +53,7 @@ export type user = {
 export const userData: user = {
   name: "Salomón León",
   description:
-    "I'm a Front End Web Developer from Venezuela currently living in Santiago, Chile. My preferred tech stack includes React, TypeScript and SCSS but I'm always open to expand my skillset to meet the demands of any project. I'm looking for a Developer position. I have a diverse portfolio with many practice projects to showcase my coding abilities and style to potential employers. I'm fluent in English and a native Spanish speaker, so feel free to contact me for any question you may have.",
+    "I'm a Front End Web Developer from Venezuela currently living in Santiago, Chile. My preferred tech stack includes React, TypeScript and SCSS but I'm always open to expand my skillset to meet the demands of any project. I'm looking for a Developer position. I have a diverse portfolio with many practice projects to showcase my coding abilities and style to potential employers. I'm fluent in English and a native Spanish speaker, so feel free to contact me for any question you may have",
   profilePicture: profilePicture,
   skills: [
     {

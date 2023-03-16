@@ -4,12 +4,12 @@ type AboutProps = {
 
 function About({ text }: AboutProps) {
   const paragraphs = text.split(".").map((paragraph) => {
-    return <p>{paragraph}.</p>;
+    return <p className="section__text">{paragraph}.</p>;
   });
 
   return (
-    <section>
-      <h2>About Me :</h2>
+    <section className="section about">
+      <h2 className="section__title">About Me :</h2>
       {paragraphs}
     </section>
   );

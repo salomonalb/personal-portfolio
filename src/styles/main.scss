@@ -2,8 +2,15 @@
 @use "./variables" as *;
 @use "./section" as *;
 @use "./hero" as *;
+@use "./about" as *;
 
 body {
   background-color: $grayish-blue;
   padding: 2rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
