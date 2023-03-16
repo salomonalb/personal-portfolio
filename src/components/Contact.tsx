@@ -7,19 +7,19 @@ type contactProps = {
 function Contact({ contacts }: contactProps) {
   const contactElements = contacts.map((contact) => {
     return (
-      <li>
-        <a href={contact.link} target="_blank">
-          <img src={contact.icon} alt="" /> {contact.text}{" "}
-          <img src={linkIcon} alt="" />
+      <li className="contact">
+        <a className="contact__row section__text" href={contact.link} target="_blank">
+          <img className="contact__icon" src={contact.icon} alt="" /> {contact.text}{" "}
+          <img className="section__link-icon" src={linkIcon} alt="" />
         </a>
       </li>
     );
   });
 
   return (
-    <section>
-      <h2>Contact</h2>
-      <ul>{contactElements}</ul>
+    <section className="section">
+      <h2 className="section__title">Contact Me :</h2>
+      <ul className="contacts-container">{contactElements}</ul>
     </section>
   );
 }
