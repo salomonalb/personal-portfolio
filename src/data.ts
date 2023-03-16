@@ -1,4 +1,4 @@
-import profilePicture from "./images/profile-picture.png"
+import profilePicture from "./images/profile-picture.png";
 import htmlIcon from "./images/icons/html-icon.png";
 import cssIcon from "./images/icons/css-icon.png";
 import javascriptIcon from "./images/icons/javascript-icon.png";
@@ -12,19 +12,19 @@ import twitterIcon from "./images/icons/twitter-icon.png";
 import githubIcon from "./images/icons/github-icon.png";
 import emailIcon from "./images/icons/email-icon.png";
 import phoneIcon from "./images/icons/phone-icon.png";
-import responsiveIcon from "./images/icons/responsive-icon.png"
+import responsiveIcon from "./images/icons/responsive-icon.png";
 import usaIcon from "./images/icons/usa-icon.webp";
 import crowdfundingImage from "./images/projects/crowdfunding-productpage.png";
-import dashboardImage from "./images/projects/dashboard-with-theme-switcher.png"
-import commentSectionImage from "./images/projects/interactive-comment-section.png"
-import sunnyImage from "./images/projects/sunny-side-agency.png"
-import tipCalculatorImage from "./images/projects/tip-calculator-app.png"
-import notificationimage from "./images/projects/notifications-page.png"
+import dashboardImage from "./images/projects/dashboard-with-theme-switcher.png";
+import commentSectionImage from "./images/projects/interactive-comment-section.png";
+import sunnyImage from "./images/projects/sunny-side-agency.png";
+import tipCalculatorImage from "./images/projects/tip-calculator-app.png";
+import notificationimage from "./images/projects/notifications-page.png";
 
 export type skill = {
   name: string;
   icon: string;
-  certificate: string
+  certificate: string;
 };
 
 export type project = {
@@ -59,53 +59,60 @@ export const userData: user = {
     {
       name: "HTML",
       icon: htmlIcon,
-      certificate: "https://www.testdome.com/certificates/a1b31380739b43538bbbf045ab1a3b88"
+      certificate:
+        "https://www.testdome.com/certificates/a1b31380739b43538bbbf045ab1a3b88",
     },
     {
       name: "CSS",
       icon: cssIcon,
-      certificate: "https://www.testdome.com/certificates/a1b31380739b43538bbbf045ab1a3b88"
+      certificate:
+        "https://www.testdome.com/certificates/a1b31380739b43538bbbf045ab1a3b88",
     },
     {
       name: "JavaScript",
       icon: javascriptIcon,
-      certificate: "https://www.testdome.com/certificates/1ae4d38bfca04f7f8b37856d9b041bd4"
+      certificate:
+        "https://www.testdome.com/certificates/1ae4d38bfca04f7f8b37856d9b041bd4",
     },
     {
       name: "TypeScript",
       icon: typescriptIcon,
-      certificate: "https://www.testdome.com/certificates/cd950de7804845eb8ae3cf03aec921a2"
+      certificate:
+        "https://www.testdome.com/certificates/cd950de7804845eb8ae3cf03aec921a2",
     },
     {
       name: "SCSS",
       icon: scssIcon,
-      certificate: ""
+      certificate: "",
     },
     {
       name: "React",
       icon: reactIcon,
-      certificate: "https://www.testdome.com/certificates/5262bc8a6ebe49f8996285a83aaf36c4"
+      certificate:
+        "https://www.testdome.com/certificates/5262bc8a6ebe49f8996285a83aaf36c4",
     },
     {
       name: "GIT",
       icon: gitIcon,
-      certificate: "https://www.testdome.com/certificates/9c4266e8824d4df7b0a93d8465d5f533"
+      certificate:
+        "https://www.testdome.com/certificates/9c4266e8824d4df7b0a93d8465d5f533",
     },
     {
       name: "NPM",
       icon: npmIcon,
-      certificate: ""
+      certificate: "",
     },
     {
       name: "English",
       icon: usaIcon,
-      certificate: "https://www.efset.org/cert/FSZ4vy"
+      certificate: "https://www.efset.org/cert/FSZ4vy",
     },
     {
       name: "Responsive Web Design",
       icon: responsiveIcon,
-      certificate: "https://www.freecodecamp.org/certification/salomonleon/responsive-web-design"
-    }
+      certificate:
+        "https://www.freecodecamp.org/certification/salomonleon/responsive-web-design",
+    },
   ],
   projects: [
     {
@@ -114,7 +121,7 @@ export const userData: user = {
         "Interactive Comment Section is a project built on the CRUD pattern, allowing users to perform standard operations such as creating new comments, replying to existing ones, and editing their own comments. In addition, users can upvote and downvote comments made by other users, and a sorting algorithm ensures that the most popular comments appear at the top of the main thread",
       websiteLink: "https://interactive-comment-section-react-sl.netlify.app",
       githubLink: "https://github.com/salomonalb/interactive-comment-section",
-      projectImage: commentSectionImage
+      projectImage: commentSectionImage,
     },
     {
       name: "Crowdfunding Product Page",
@@ -123,7 +130,7 @@ export const userData: user = {
       websiteLink: "https://crowndfunding-productpage.netlify.app",
       githubLink:
         "https://github.com/salomonalb/crowdfunding-product-page-main",
-        projectImage: crowdfundingImage
+      projectImage: crowdfundingImage,
     },
     {
       name: "Tip Calculator App",
@@ -131,7 +138,7 @@ export const userData: user = {
         "This calculator allows you to input the amount to be billed, the percentage to tip and the number of people to split the bill with. It outputs the tip amount for each person and the total amount for each person. Finally, it has a button that allows you to reset the app.",
       websiteLink: "https://tip-calculator-app-blas.netlify.app",
       githubLink: "https://github.com/salomonalb/tip-calculator-app",
-      projectImage: tipCalculatorImage
+      projectImage: tipCalculatorImage,
     },
     {
       name: "Sunnyside Agency Landing Page",
@@ -140,7 +147,7 @@ export const userData: user = {
       websiteLink: "https://sunny-side-agency-project.netlify.app",
       githubLink:
         "https://github.com/salomonalb/sunnyside-agency-landing-page-main",
-        projectImage:  sunnyImage
+      projectImage: sunnyImage,
     },
     {
       name: "Notifications page",
@@ -148,7 +155,7 @@ export const userData: user = {
         "Users are able to toggle notifications from unread to read and a counter shows the number of unread notifications",
       websiteLink: "https://notifications-page-project.netlify.app",
       githubLink: "https://github.com/salomonalb/notifications-page",
-      projectImage: notificationimage
+      projectImage: notificationimage,
     },
     {
       name: "Social Media Dashboard With Theme Switcher",
@@ -157,7 +164,7 @@ export const userData: user = {
       websiteLink: "https://dashboard-with-theme-switcher-b.netlify.app",
       githubLink:
         "https://github.com/salomonalb/social-media-dashboard-with-theme-switcher",
-        projectImage: dashboardImage
+      projectImage: dashboardImage,
     },
   ],
   contactMethods: [
@@ -185,6 +192,6 @@ export const userData: user = {
       text: "+56 9 6640 2674",
       link: "tel:+56966402674",
       icon: phoneIcon,
-    }
+    },
   ],
 };

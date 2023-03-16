@@ -1,12 +1,11 @@
-import About from "./components/About"
-import Contact from "./components/Contact"
-import Hero from "./components/Hero"
-import Projects from "./components/projects"
-import Skills from "./components/Skills"
-import { userData } from "./data"
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Hero from "./components/Hero";
+import Projects from "./components/projects";
+import Skills from "./components/Skills";
+import { userData } from "./data";
 
 function App() {
-
   return (
     <main className="App">
       <Hero name={userData.name} photo={userData.profilePicture} />
@@ -15,7 +14,7 @@ function App() {
       <Projects projects={userData.projects} />
       <Contact contacts={userData.contactMethods} />
     </main>
-  )
+  );
 }
 
-export default App
+export default App;
