@@ -12,6 +12,9 @@
   padding-block: 3rem;
   display: flex;
   flex-direction: column;
+  @media (min-width: 769px) {
+    display: none;
+  }
 
   &.--open {
     right: 0;
