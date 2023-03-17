@@ -7,6 +7,8 @@
 @use "./footer" as *;
 @use "./header" as *;
 @use "./drawer" as *;
+@use "./skills" as *;
+@use "./contact" as *;
 
 body {
   background-color: $grayish-blue;
@@ -18,4 +20,9 @@ main {
   gap: 3rem;
   padding: 2rem;
   scroll-padding-top: 3rem;
+  margin-top: 10rem;
+  align-content: center;
+  justify-content: center;
+  max-width: max-content;
+  margin-inline: auto;
 }
