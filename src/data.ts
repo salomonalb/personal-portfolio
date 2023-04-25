@@ -14,12 +14,15 @@ import emailIcon from "./images/icons/email-icon.png";
 import phoneIcon from "./images/icons/phone-icon.png";
 import responsiveIcon from "./images/icons/responsive-icon.png";
 import usaIcon from "./images/icons/usa-icon.webp";
+import reduxIcon from "./images/icons/redux-icon.png"
+import reactRouterIcon from "./images/icons/react-router-icon.png"
 import crowdfundingImage from "./images/projects/crowdfunding-productpage.png";
 import dashboardImage from "./images/projects/dashboard-with-theme-switcher.png";
 import commentSectionImage from "./images/projects/interactive-comment-section.png";
 import sunnyImage from "./images/projects/sunny-side-agency.png";
 import tipCalculatorImage from "./images/projects/tip-calculator-app.png";
 import notificationimage from "./images/projects/notifications-page.png";
+import learnKanaAppImage from "./images/projects/learn-kana-app.png";
 
 export type skill = {
   name: string;
@@ -92,6 +95,17 @@ export const userData: user = {
         "https://www.testdome.com/certificates/5262bc8a6ebe49f8996285a83aaf36c4",
     },
     {
+      name: "Redux",
+      icon: reduxIcon,
+      certificate:
+        "https://www.testdome.com/certificates/26057341bc6e47bcaf4e4ebcb60b7484",
+    },
+    {
+      name: "React Router",
+      icon: reactRouterIcon,
+      certificate: "",
+    },
+    {
       name: "GIT",
       icon: gitIcon,
       certificate:
@@ -115,6 +129,14 @@ export const userData: user = {
     },
   ],
   projects: [
+    {
+      name: "Learn Kana App",
+      description:
+        "Learn Kana App is a web App for learning the Japanese Writing System. The app lets you select between different character sets, like Hiragana, Katakana and Kanji. It's made with React and Redux",
+      websiteLink: "https://learn-kana.netlify.app",
+      githubLink: "https://github.com/salomonalb/learn-kana-app",
+      projectImage: learnKanaAppImage,
+    },
     {
       name: "Interactive Comment Section",
       description:
